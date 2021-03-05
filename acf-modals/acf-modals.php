@@ -1,12 +1,12 @@
 <?php
 
 /*
-Plugin Name: Advanced Custom Fields: FIELD_LABEL
-Plugin URI: PLUGIN_URL
-Description: SHORT_DESCRIPTION
+Plugin Name: Advanced Custom Fields: Modals
+Plugin URI: https://prikr.io
+Description: Adds modal field to ACF
 Version: 1.0.0
-Author: AUTHOR_NAME
-Author URI: AUTHOR_URL
+Author: Prikr
+Author URI: https://prikr.io
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -16,9 +16,9 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 
 // check if class already exists
-if( !class_exists('NAMESPACE_acf_plugin_FIELD_NAME') ) :
+if( !class_exists('NAMESPACE_acf_plugin_modals') ) :
 
-class NAMESPACE_acf_plugin_FIELD_NAME {
+class NAMESPACE_acf_plugin_modals {
 	
 	// vars
 	var $settings;
@@ -85,7 +85,7 @@ class NAMESPACE_acf_plugin_FIELD_NAME {
 
 
 // initialize
-new NAMESPACE_acf_plugin_FIELD_NAME();
+new NAMESPACE_acf_plugin_modals();
 
 
 // class_exists check

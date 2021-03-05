@@ -5,10 +5,10 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 
 // check if class already exists
-if( !class_exists('NAMESPACE_acf_field_FIELD_NAME') ) :
+if( !class_exists('NAMESPACE_acf_field_modals') ) :
 
 
-class NAMESPACE_acf_field_FIELD_NAME extends acf_field {
+class NAMESPACE_acf_field_modals extends acf_field {
 	
 	
 	/*
@@ -30,14 +30,14 @@ class NAMESPACE_acf_field_FIELD_NAME extends acf_field {
 		*  name (string) Single word, no spaces. Underscores allowed
 		*/
 		
-		$this->name = 'FIELD_NAME';
+		$this->name = 'modals';
 		
 		
 		/*
 		*  label (string) Multiple words, can include spaces, visible when selecting a field type
 		*/
 		
-		$this->label = __('FIELD_LABEL', 'TEXTDOMAIN');
+		$this->label = __('Modals', 'TEXTDOMAIN');
 		
 		
 		/*
@@ -58,7 +58,7 @@ class NAMESPACE_acf_field_FIELD_NAME extends acf_field {
 		
 		/*
 		*  l10n (array) Array of strings that are used in JavaScript. This allows JS strings to be translated in PHP and loaded via:
-		*  var message = acf._e('FIELD_NAME', 'error');
+		*  var message = acf._e('modals', 'error');
 		*/
 		
 		$this->l10n = array(

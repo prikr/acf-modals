@@ -1,4 +1,4 @@
-=== Advanced Custom Fields: FIELD_LABEL Field ===
+=== Advanced Custom Fields: Modals Field ===
 Contributors: AUTHOR_NAME
 Tags: PLUGIN_TAGS
 Requires at least: 3.6.0
@@ -22,8 +22,8 @@ This ACF field type is compatible with:
 == Installation ==
 
 1. Copy the `acf-FIELD-NAME` folder into your `wp-content/plugins` folder
-2. Activate the FIELD_LABEL plugin via the plugins admin page
-3. Create a new field via ACF and select the FIELD_LABEL type
+2. Activate the Modals plugin via the plugins admin page
+3. Create a new field via ACF and select the Modals type
 4. Read the description above for usage instructions
 
 == Changelog ==
