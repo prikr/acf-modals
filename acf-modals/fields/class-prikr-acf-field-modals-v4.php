@@ -29,7 +29,7 @@ class prikr_acf_field_modals extends acf_field {
 		// vars
 		$this->name = 'modals';
 		$this->label = __('Modals');
-		$this->category = __("Basic",'TEXTDOMAIN'); // Basic, Content, Choice, etc
+		$this->category = __("Basic",'prikr'); // Basic, Content, Choice, etc
 		$this->defaults = array(
 			// add default here to merge into your field. 
 			// This makes life easy when creating the field options as you don't need to use any if( isset('') ) logic. eg:
@@ -75,8 +75,8 @@ class prikr_acf_field_modals extends acf_field {
 		?>
 <tr class="field_option field_option_<?php echo $this->name; ?>">
 	<td class="label">
-		<label><?php _e("Preview Size",'TEXTDOMAIN'); ?></label>
-		<p class="description"><?php _e("Thumbnail is advised",'TEXTDOMAIN'); ?></p>
+		<label><?php _e("Preview Size",'prikr'); ?></label>
+		<p class="description"><?php _e("Thumbnail is advised",'prikr'); ?></p>
 	</td>
 	<td>
 		<?php
@@ -87,8 +87,8 @@ class prikr_acf_field_modals extends acf_field {
 			'value'		=>	$field['preview_size'],
 			'layout'	=>	'horizontal',
 			'choices'	=>	array(
-				'thumbnail' => __('Thumbnail', 'TEXTDOMAIN'),
-				'something_else' => __('Something Else', 'TEXTDOMAIN'),
+				'thumbnail' => __('Thumbnail', 'prikr'),
+				'something_else' => __('Something Else', 'prikr'),
 			)
 		));
 		
@@ -154,13 +154,13 @@ class prikr_acf_field_modals extends acf_field {
 		
 		
 		// register & include JS
-		wp_register_script('TEXTDOMAIN', "{$url}assets/js/input.js", array('acf-input'), $version);
-		wp_enqueue_script('TEXTDOMAIN');
+		wp_register_script('prikr', "{$url}assets/js/input.js", array('acf-input'), $version);
+		wp_enqueue_script('prikr');
 		
 		
 		// register & include CSS
-		wp_register_style('TEXTDOMAIN', "{$url}assets/css/input.css", array('acf-input'), $version);
-		wp_enqueue_style('TEXTDOMAIN');
+		wp_register_style('prikr', "{$url}assets/css/input.css", array('acf-input'), $version);
+		wp_enqueue_style('prikr');
 		
 	}
 	

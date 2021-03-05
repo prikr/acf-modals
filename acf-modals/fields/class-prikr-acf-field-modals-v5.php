@@ -37,7 +37,7 @@ class prikr_acf_field_modals extends acf_field {
 		*  label (string) Multiple words, can include spaces, visible when selecting a field type
 		*/
 		
-		$this->label = __('Modals', 'TEXTDOMAIN');
+		$this->label = __('Modals', 'prikr');
 		
 		
 		/*
@@ -62,7 +62,7 @@ class prikr_acf_field_modals extends acf_field {
 		*/
 		
 		$this->l10n = array(
-			'error'	=> __('Error! Please enter a higher value', 'TEXTDOMAIN'),
+			'error'	=> __('Error! Please enter a higher value', 'prikr'),
 		);
 		
 		
@@ -105,8 +105,8 @@ class prikr_acf_field_modals extends acf_field {
 		*/
 		
 		acf_render_field_setting( $field, array(
-			'label'			=> __('Font Size','TEXTDOMAIN'),
-			'instructions'	=> __('Customise the input font size','TEXTDOMAIN'),
+			'label'			=> __('Font Size','prikr'),
+			'instructions'	=> __('Customise the input font size','prikr'),
 			'type'			=> 'number',
 			'name'			=> 'font_size',
 			'prepend'		=> 'px',
@@ -178,13 +178,13 @@ class prikr_acf_field_modals extends acf_field {
 		
 		
 		// register & include JS
-		wp_register_script('TEXTDOMAIN', "{$url}assets/js/input.js", array('acf-input'), $version);
-		wp_enqueue_script('TEXTDOMAIN');
+		wp_register_script('prikr', "{$url}assets/js/input.js", array('acf-input'), $version);
+		wp_enqueue_script('prikr');
 		
 		
 		// register & include CSS
-		wp_register_style('TEXTDOMAIN', "{$url}assets/css/input.css", array('acf-input'), $version);
-		wp_enqueue_style('TEXTDOMAIN');
+		wp_register_style('prikr', "{$url}assets/css/input.css", array('acf-input'), $version);
+		wp_enqueue_style('prikr');
 		
 	}
 	
@@ -443,7 +443,7 @@ class prikr_acf_field_modals extends acf_field {
 		// Advanced usage
 		if( $value < $field['custom_minimum_setting'] )
 		{
-			$valid = __('The value is too little!','TEXTDOMAIN'),
+			$valid = __('The value is too little!','prikr'),
 		}
 		
 		

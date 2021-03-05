@@ -73,8 +73,8 @@ class prikr_acf_plugin_modals {
 		if( !$version ) $version = 4;
 		
 		
-		// load textdomain
-		load_plugin_textdomain( 'TEXTDOMAIN', false, plugin_basename( dirname( __FILE__ ) ) . '/lang' ); 
+		// load prikr
+		load_plugin_prikr( 'prikr', false, plugin_basename( dirname( __FILE__ ) ) . '/lang' ); 
 		
 		
 		// include
