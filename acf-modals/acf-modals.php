@@ -16,9 +16,9 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 
 // check if class already exists
-if( !class_exists('NAMESPACE_acf_plugin_modals') ) :
+if( !class_exists('prikr_acf_plugin_modals') ) :
 
-class NAMESPACE_acf_plugin_modals {
+class prikr_acf_plugin_modals {
 	
 	// vars
 	var $settings;
@@ -78,14 +78,14 @@ class NAMESPACE_acf_plugin_modals {
 		
 		
 		// include
-		include_once('fields/class-NAMESPACE-acf-field-FIELD-NAME-v' . $version . '.php');
+		include_once('fields/class-prikr-acf-field-FIELD-NAME-v' . $version . '.php');
 	}
 	
 }
 
 
 // initialize
-new NAMESPACE_acf_plugin_modals();
+new prikr_acf_plugin_modals();
 
 
 // class_exists check
